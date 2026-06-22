@@ -122,7 +122,7 @@ olist-project/
 3. Run the scripts in order:
 ```
 python load_data.py
-python build_orders_master.py
+python build_order_masters.py
 python query1_monthly_revenue.py
 python query2_repeat_customers.py
 python repeat_rate_caveat_test.py
