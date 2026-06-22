@@ -48,7 +48,7 @@ This produced `orders_master` — one clean row per order, with correct revenue,
 ### Step 3 - Monthly Revenue Trend Analysis
 **Question:** Is revenue growing, shrinking, or flat over time?
 **Method:** Grouped orders by month, summed revenue, excluded canceled/unavailable orders and incomplete edge months (the dataset's first/last months had only 1–2 orders).
-**Finding:** Revenue grew ~9x from Jan 2017 ($137K) to a Black Friday peak in Nov 2017 (~$1.17M), then plateaued through 2018 at $1M–$1.2M/month with no further growth.
+**Finding:** Revenue grew nearly 9x from Jan 2017 ($137K) to a Black Friday peak in Nov 2017 (~$1.17M), then plateaued through 2018 at $1M–$1.2M/month with no further growth.
 *(Script: `query1_monthly_revenue.py`)*
 
 ### Step 4 - Repeat vs. One-Time Customer Analysis
@@ -66,7 +66,7 @@ This produced `orders_master` — one clean row per order, with correct revenue,
 ### Step 6 - Customer Segmentation (Adapted RFM)
 **Question:** Among the customers who could be targeted for retention, which are actually worth the effort?
 **Method:** Calculated Recency, Frequency, and Monetary value per customer. Since 97% of customers had a frequency of exactly 1, a standard 5x5x5 RFM grid wasn't meaningful — instead, Recency and Monetary were split into quartiles, and Frequency was used as a simple "repeat buyer" flag. Combined into 6 plain-English segments.
-**Finding:** "High-Value Lapsed (At Risk)" customers (11.5% of the base, ~$394 avg. spend) are nearly identical in size to currently active high-value customers (11.6%, ~$391 avg. spend) — the business is losing close to half its best customers to inactivity.
+**Finding:** "High-Value Lapsed (At Risk)" customers (11.5% of the base, roughly $394 avg. spend) are nearly identical in size to currently active high-value customers (11.6%, roughly $391 avg. spend) — the business is losing close to half its best customers to inactivity.
 *(Script: `rfm_segmentation.py`)*
 
 ### Step 7 - Cohort Retention Analysis
