@@ -1,0 +1,7 @@
+segment,num_customers,avg_monetary,avg_recency_days,pct
+Low-Value Lapsed,35306,88.4,369.4,37.17
+Low-Value Active,34861,89.6,116.6,36.7
+High-Value New/Active,11047,390.6,116.4,11.63
+High-Value Lapsed (At Risk),10881,394.0,371.5,11.46
+Loyal Active,1584,314.2,117.1,1.67
+Loyal Lapsed,1304,301.0,358.6,1.37
